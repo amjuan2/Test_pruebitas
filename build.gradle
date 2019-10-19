@@ -1,0 +1,15 @@
+
+apply plugin: 'java-library'
+
+repositories {
+    jcenter()
+    mavenLocal()
+    maven { url "http://10.101.129.155:8080/repository/internal/" }
+}
+
+dependencies {
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.19'
+    compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.31'
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.19'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.19'
+}
